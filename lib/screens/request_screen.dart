@@ -35,9 +35,8 @@ class _RequestScreenState extends State<RequestScreen> {
                     icon: Icon(Icons.person),
                     labelText: 'How do we call you?',
                   ),
-                  // keyboardType: TextInputType.phone,
                   validator: (value) {
-                    if (value?.length != 3) {
+                    if (value == null || value.isEmpty) {
                       return 'Enter Valid Name!';
                     } else {
                       return null;
@@ -48,12 +47,11 @@ class _RequestScreenState extends State<RequestScreen> {
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: 'e.g ABC XYZ',
-                    icon: Icon(Icons.person_add),
+                    icon: Icon(Icons.sick),
                     labelText: 'Patient Name',
                   ),
-                  // keyboardType: TextInputType.phone,
                   validator: (value) {
-                    if (value?.length != 3) {
+                    if (value == null || value.isEmpty) {
                       return 'Enter Valid Name!';
                     } else {
                       return null;
