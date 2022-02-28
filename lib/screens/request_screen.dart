@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_blood_bank/screens/date_location_screen.dart';
 
 class RequestScreen extends StatefulWidget {
   const RequestScreen({Key? key}) : super(key: key);
@@ -63,10 +64,10 @@ class _RequestScreenState extends State<RequestScreen> {
                   child: const Text('Proceed Request'),
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => const Verified()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const DateLocation()));
                     }
                   },
                 ),
