@@ -58,9 +58,8 @@ class MyHomeScreen extends StatelessWidget {
             ],
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           ),
-          color: Colors.black12,
-          height: 512,
-          width: 320,
+          height: 520,
+          width: 480,
         ),
       ),
     );
