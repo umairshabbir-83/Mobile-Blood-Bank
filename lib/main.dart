@@ -1,5 +1,7 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_blood_bank/screens/request_screen.dart';
+import 'package:mobile_blood_bank/screens/home_screen.dart';
+import 'package:mobile_blood_bank/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,12 +18,11 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.red,
         ),
-        home: const RequestScreen());
-    // home: AnimatedSplashScreen(
-    //   duration: 3000,
-    //   nextScreen: const MyHomeScreen(),
-    //   splash: const Splash(),
-    //   splashTransition: SplashTransition.scaleTransition,
-    // ));
+        home: AnimatedSplashScreen(
+          duration: 3000,
+          nextScreen: const MyHomeScreen(),
+          splash: const Splash(),
+          splashTransition: SplashTransition.scaleTransition,
+        ));
   }
 }
