@@ -20,8 +20,8 @@ class _SplashState extends State<Splash> {
         children: [
           Image.asset(
             'assets/logo/MBB.png',
-            height: 100,
-            width: 100,
+            height: 70,
+            width: 70,
           ),
         ],
         mainAxisAlignment: MainAxisAlignment.center,
